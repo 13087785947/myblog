@@ -1,0 +1,264 @@
+2019-11-16 00:04:00.737  INFO 20120 --- [http-nio-8080-exec-4] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.index', args=[0, {}, org.apache.catalina.connector.RequestFacade@2c9a5765]}
+2019-11-16 00:04:00.888  INFO 20120 --- [http-nio-8080-exec-4] com.zzj.blog.aspect.LogAspect            : Result:index
+2019-11-16 00:04:01.510  INFO 20120 --- [http-nio-8080-exec-3] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 00:04:01.516  INFO 20120 --- [http-nio-8080-exec-3] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 00:04:07.549  INFO 20120 --- [http-nio-8080-exec-6] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/blog/50', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.blog', args=[50, {}]}
+2019-11-16 00:04:07.565  INFO 20120 --- [http-nio-8080-exec-6] com.zzj.blog.aspect.LogAspect            : Result:blog
+2019-11-16 00:04:07.745  INFO 20120 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 00:04:07.755  INFO 20120 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 00:04:08.137  INFO 20120 --- [http-nio-8080-exec-10] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/comments/50', ip='127.0.0.1', classMethod='com.zzj.blog.web.CommentController.comments', args=[50, {}]}
+2019-11-16 00:04:08.146  INFO 20120 --- [http-nio-8080-exec-10] com.zzj.blog.aspect.LogAspect            : Result:blog :: commentList
+2019-11-16 00:08:09.354  INFO 20120 --- [http-nio-8080-exec-6] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.index', args=[0, {}, org.apache.catalina.connector.RequestFacade@6609f438]}
+2019-11-16 00:08:09.502  INFO 20120 --- [http-nio-8080-exec-6] com.zzj.blog.aspect.LogAspect            : Result:index
+2019-11-16 00:08:09.624  INFO 20120 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 00:08:09.638  INFO 20120 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 00:08:11.806  INFO 20120 --- [http-nio-8080-exec-7] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/blog/50', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.blog', args=[50, {}]}
+2019-11-16 00:08:11.821  INFO 20120 --- [http-nio-8080-exec-7] com.zzj.blog.aspect.LogAspect            : Result:blog
+2019-11-16 00:08:11.957  INFO 20120 --- [http-nio-8080-exec-8] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 00:08:11.968  INFO 20120 --- [http-nio-8080-exec-8] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 00:08:12.383  INFO 20120 --- [http-nio-8080-exec-9] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/comments/50', ip='127.0.0.1', classMethod='com.zzj.blog.web.CommentController.comments', args=[50, {}]}
+2019-11-16 00:08:12.386  INFO 20120 --- [http-nio-8080-exec-9] com.zzj.blog.aspect.LogAspect            : Result:blog :: commentList
+2019-11-16 00:10:55.188  INFO 20120 --- [http-nio-8080-exec-7] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/blog/50', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.blog', args=[50, {}]}
+2019-11-16 00:10:55.199  INFO 20120 --- [http-nio-8080-exec-7] com.zzj.blog.aspect.LogAspect            : Result:blog
+2019-11-16 00:10:55.274  INFO 20120 --- [http-nio-8080-exec-8] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 00:10:55.279  INFO 20120 --- [http-nio-8080-exec-8] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 00:10:55.670  INFO 20120 --- [http-nio-8080-exec-9] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/comments/50', ip='127.0.0.1', classMethod='com.zzj.blog.web.CommentController.comments', args=[50, {}]}
+2019-11-16 00:10:55.673  INFO 20120 --- [http-nio-8080-exec-9] com.zzj.blog.aspect.LogAspect            : Result:blog :: commentList
+2019-11-16 00:11:32.637  INFO 20120 --- [http-nio-8080-exec-3] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/blog/50', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.blog', args=[50, {}]}
+2019-11-16 00:11:32.651  INFO 20120 --- [http-nio-8080-exec-3] com.zzj.blog.aspect.LogAspect            : Result:blog
+2019-11-16 00:11:32.730  INFO 20120 --- [http-nio-8080-exec-7] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 00:11:32.736  INFO 20120 --- [http-nio-8080-exec-7] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 00:11:33.148  INFO 20120 --- [http-nio-8080-exec-8] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/comments/50', ip='127.0.0.1', classMethod='com.zzj.blog.web.CommentController.comments', args=[50, {}]}
+2019-11-16 00:11:33.151  INFO 20120 --- [http-nio-8080-exec-8] com.zzj.blog.aspect.LogAspect            : Result:blog :: commentList
+2019-11-16 00:12:02.121  INFO 20120 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.index', args=[1, {}, org.apache.catalina.connector.RequestFacade@c0a2416]}
+2019-11-16 00:12:02.251  INFO 20120 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result:index
+2019-11-16 00:12:02.489  INFO 20120 --- [http-nio-8080-exec-3] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 00:12:02.498  INFO 20120 --- [http-nio-8080-exec-3] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 00:13:18.467 ERROR 20120 --- [http-nio-8080-exec-5] c.z.b.h.ControllerExceptionHandler       : Request URL:/admin/blogs,Exception:{}
+
+java.lang.NullPointerException: null
+	at com.zzj.blog.web.admin.BlogController.post(BlogController.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-16 00:13:18.471  WARN 20120 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2019-11-16 00:13:18.812  INFO 20120 --- [http-nio-8080-exec-4] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 00:13:18.820  INFO 20120 --- [http-nio-8080-exec-4] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 00:14:16.739  INFO 20120 --- [http-nio-8080-exec-10] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 00:14:16.743  INFO 20120 --- [http-nio-8080-exec-10] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 00:14:20.574  INFO 20120 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.index', args=[0, {}, org.apache.catalina.connector.RequestFacade@2c9a5765]}
+2019-11-16 00:14:20.687  INFO 20120 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result:index
+2019-11-16 00:14:20.868  INFO 20120 --- [http-nio-8080-exec-7] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 00:14:20.876  INFO 20120 --- [http-nio-8080-exec-7] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 00:14:26.616  INFO 20120 --- [http-nio-8080-exec-8] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.index', args=[0, {}, org.apache.catalina.connector.RequestFacade@2c9a5765]}
+2019-11-16 00:14:26.733  INFO 20120 --- [http-nio-8080-exec-8] com.zzj.blog.aspect.LogAspect            : Result:index
+2019-11-16 00:14:26.843  INFO 20120 --- [http-nio-8080-exec-9] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 00:14:26.848  INFO 20120 --- [http-nio-8080-exec-9] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 00:14:31.560  INFO 20120 --- [http-nio-8080-exec-2] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.index', args=[1, {}, org.apache.catalina.connector.RequestFacade@6609f438]}
+2019-11-16 00:14:31.689  INFO 20120 --- [http-nio-8080-exec-2] com.zzj.blog.aspect.LogAspect            : Result:index
+2019-11-16 00:14:31.918  INFO 20120 --- [http-nio-8080-exec-6] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 00:14:31.922  INFO 20120 --- [http-nio-8080-exec-6] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 00:14:36.903  INFO 20120 --- [http-nio-8080-exec-10] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.index', args=[0, {}, org.apache.catalina.connector.RequestFacade@6609f438]}
+2019-11-16 00:14:37.017  INFO 20120 --- [http-nio-8080-exec-10] com.zzj.blog.aspect.LogAspect            : Result:index
+2019-11-16 00:14:37.118  INFO 20120 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 00:14:37.123  INFO 20120 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 00:14:39.360  INFO 20120 --- [http-nio-8080-exec-7] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/types/-1', ip='127.0.0.1', classMethod='com.zzj.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2019-11-16 00:14:39.374  INFO 20120 --- [http-nio-8080-exec-7] com.zzj.blog.aspect.LogAspect            : Result:types
+2019-11-16 00:14:39.612  INFO 20120 --- [http-nio-8080-exec-8] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 00:14:39.617  INFO 20120 --- [http-nio-8080-exec-8] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 00:14:42.446  INFO 20120 --- [http-nio-8080-exec-9] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/blog/46', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.blog', args=[46, {}]}
+2019-11-16 00:14:42.462  INFO 20120 --- [http-nio-8080-exec-9] com.zzj.blog.aspect.LogAspect            : Result:blog
+2019-11-16 00:14:42.534  INFO 20120 --- [http-nio-8080-exec-6] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 00:14:42.538  INFO 20120 --- [http-nio-8080-exec-6] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 00:14:43.003  INFO 20120 --- [http-nio-8080-exec-10] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/comments/46', ip='127.0.0.1', classMethod='com.zzj.blog.web.CommentController.comments', args=[46, {}]}
+2019-11-16 00:14:43.008  INFO 20120 --- [http-nio-8080-exec-10] com.zzj.blog.aspect.LogAspect            : Result:blog :: commentList
+2019-11-16 00:14:53.565  INFO 20120 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/about', ip='127.0.0.1', classMethod='com.zzj.blog.web.AboutShowContrller.about', args=[]}
+2019-11-16 00:14:53.571  INFO 20120 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result:about
+2019-11-16 00:14:53.798  INFO 20120 --- [http-nio-8080-exec-5] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 00:14:53.802  INFO 20120 --- [http-nio-8080-exec-5] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 00:15:11.916  INFO 20120 --- [http-nio-8080-exec-2] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.index', args=[0, {}, org.apache.catalina.connector.RequestFacade@c0a2416]}
+2019-11-16 00:15:12.021  INFO 20120 --- [http-nio-8080-exec-2] com.zzj.blog.aspect.LogAspect            : Result:index
+2019-11-16 00:15:12.229  INFO 20120 --- [http-nio-8080-exec-6] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 00:15:12.234  INFO 20120 --- [http-nio-8080-exec-6] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 00:15:17.062  INFO 20120 --- [http-nio-8080-exec-10] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/comments/commentsPage/', ip='127.0.0.1', classMethod='com.zzj.blog.web.CommentController.commentToPage', args=[1, {}]}
+2019-11-16 00:15:17.067  INFO 20120 --- [http-nio-8080-exec-10] com.zzj.blog.aspect.LogAspect            : Result:index :: commentList
+2019-11-16 00:15:20.042  INFO 20120 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/comments/commentsPage/', ip='127.0.0.1', classMethod='com.zzj.blog.web.CommentController.commentToPage', args=[0, {}]}
+2019-11-16 00:15:20.048  INFO 20120 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result:index :: commentList
+2019-11-16 00:15:41.335  INFO 20120 --- [http-nio-8080-exec-4] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.index', args=[0, {}, org.apache.catalina.connector.RequestFacade@2c820f1a]}
+2019-11-16 00:15:41.427  INFO 20120 --- [http-nio-8080-exec-4] com.zzj.blog.aspect.LogAspect            : Result:index
+2019-11-16 00:15:41.868  INFO 20120 --- [http-nio-8080-exec-5] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 00:15:41.871  INFO 20120 --- [http-nio-8080-exec-5] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 00:15:54.365  INFO 20120 --- [http-nio-8080-exec-9] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.index', args=[1, {}, org.apache.catalina.connector.RequestFacade@2c9a5765]}
+2019-11-16 00:15:54.474  INFO 20120 --- [http-nio-8080-exec-9] com.zzj.blog.aspect.LogAspect            : Result:index
+2019-11-16 00:15:54.603  INFO 20120 --- [http-nio-8080-exec-6] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 00:15:54.610  INFO 20120 --- [http-nio-8080-exec-6] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 00:16:01.213  INFO 20120 --- [http-nio-8080-exec-2] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.index', args=[0, {}, org.apache.catalina.connector.RequestFacade@2c9a5765]}
+2019-11-16 00:16:01.310  INFO 20120 --- [http-nio-8080-exec-2] com.zzj.blog.aspect.LogAspect            : Result:index
+2019-11-16 00:16:01.472  INFO 20120 --- [http-nio-8080-exec-6] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 00:16:01.476  INFO 20120 --- [http-nio-8080-exec-6] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 12:46:48.330  INFO 14416 --- [restartedMain] com.zzj.blog.BlogApplication             : Starting BlogApplication on DESKTOP-J0DJ9GG with PID 14416 (started by MACHENIKE in F:\谷歌浏览器下载\MyBlogWebSite-master)
+2019-11-16 12:46:48.346 DEBUG 14416 --- [restartedMain] com.zzj.blog.BlogApplication             : Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-11-16 12:46:48.346  INFO 14416 --- [restartedMain] com.zzj.blog.BlogApplication             : The following profiles are active: dev
+2019-11-16 12:46:48.377  INFO 14416 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-16 12:46:48.377  INFO 14416 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-16 12:46:50.080  INFO 14416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-16 12:46:50.190  INFO 14416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110ms. Found 9 repository interfaces.
+2019-11-16 12:46:50.533  INFO 14416 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$de42a5ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-16 12:46:51.080  INFO 14416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-16 12:46:51.096  INFO 14416 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-16 12:46:51.096  INFO 14416 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-11-16 12:46:51.158  INFO 14416 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Program Files (x86)\NetSarang\Xftp 6\;C:\ProgramData\Oracle\Java\javapath;%MAVEN_M2%\bin;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\Java\jdk1.8.0_144\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;D:\MATLAB\runtime\win64;D:\MATLAB\bin;D:\runtime\win64;D:\polyspace\bin;D:\MATLAB\polyspace\bin;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files (x86)\Autodesk\Backburner\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\apache-maven-3.6.2-bin\apache-maven-3.6.2\bin;D:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Java\jdk1.8.0_144\bin;;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\MACHENIKE\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;E:\2345下载;C:\Users\MACHENIKE\AppData\Local\BypassRuntm;.]
+2019-11-16 12:46:51.252  INFO 14416 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-16 12:46:51.252  INFO 14416 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2875 ms
+2019-11-16 12:46:51.425  INFO 14416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-16 12:46:51.529  INFO 14416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-16 12:46:51.591  INFO 14416 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-16 12:46:51.669  INFO 14416 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-11-16 12:46:51.669  INFO 14416 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-16 12:46:51.826  INFO 14416 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-11-16 12:46:52.544  INFO 14416 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-16 12:46:53.607  INFO 14416 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-16 12:46:53.685  INFO 14416 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-16 12:46:53.998  INFO 14416 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-11-16 12:46:54.764  INFO 14416 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-16 12:46:54.826  WARN 14416 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-16 12:46:55.217  INFO 14416 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-16 12:46:55.451  INFO 14416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-16 12:46:55.451  INFO 14416 --- [restartedMain] com.zzj.blog.BlogApplication             : Started BlogApplication in 7.621 seconds (JVM running for 8.998)
+2019-11-16 12:47:02.121  INFO 14416 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-16 12:47:02.122  INFO 14416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-16 12:47:02.138  INFO 14416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2019-11-16 12:47:02.178  INFO 14416 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.index', args=[0, {}, org.apache.catalina.connector.RequestFacade@6adf7a89]}
+2019-11-16 12:47:02.512  WARN 14416 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-11-16 12:47:02.524  WARN 14416 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-11-16 12:47:02.569  INFO 14416 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result:index
+2019-11-16 12:47:03.567  INFO 14416 --- [http-nio-8080-exec-7] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 12:47:03.577  INFO 14416 --- [http-nio-8080-exec-7] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 12:47:07.125  INFO 14416 --- [http-nio-8080-exec-2] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/blog/50', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.blog', args=[50, {}]}
+2019-11-16 12:47:07.197  INFO 14416 --- [http-nio-8080-exec-2] com.zzj.blog.aspect.LogAspect            : Result:blog
+2019-11-16 12:47:07.485  INFO 14416 --- [http-nio-8080-exec-9] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 12:47:07.492  INFO 14416 --- [http-nio-8080-exec-9] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 12:47:07.958  INFO 14416 --- [http-nio-8080-exec-8] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/comments/50', ip='127.0.0.1', classMethod='com.zzj.blog.web.CommentController.comments', args=[50, {}]}
+2019-11-16 12:47:07.980  INFO 14416 --- [http-nio-8080-exec-8] com.zzj.blog.aspect.LogAspect            : Result:blog :: commentList
+2019-11-16 12:47:23.036  INFO 14416 --- [http-nio-8080-exec-6] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.index', args=[0, {}, org.apache.catalina.connector.RequestFacade@6adf7a89]}
+2019-11-16 12:47:23.188  INFO 14416 --- [http-nio-8080-exec-6] com.zzj.blog.aspect.LogAspect            : Result:index
+2019-11-16 12:47:23.366  INFO 14416 --- [http-nio-8080-exec-3] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 12:47:23.374  INFO 14416 --- [http-nio-8080-exec-3] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 12:47:33.210  INFO 14416 --- [http-nio-8080-exec-7] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.index', args=[1, {}, org.apache.catalina.connector.RequestFacade@240270cd]}
+2019-11-16 12:47:33.339  INFO 14416 --- [http-nio-8080-exec-7] com.zzj.blog.aspect.LogAspect            : Result:index
+2019-11-16 12:47:33.526  INFO 14416 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 12:47:33.531  INFO 14416 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 12:47:36.528  INFO 14416 --- [http-nio-8080-exec-2] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/aboutweb', ip='127.0.0.1', classMethod='com.zzj.blog.web.AboutShowContrller.aboutweb', args=[]}
+2019-11-16 12:47:36.532  INFO 14416 --- [http-nio-8080-exec-2] com.zzj.blog.aspect.LogAspect            : Result:aboutweb
+2019-11-16 12:47:36.803  INFO 14416 --- [http-nio-8080-exec-5] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 12:47:36.810  INFO 14416 --- [http-nio-8080-exec-5] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 12:47:37.192  INFO 14416 --- [http-nio-8080-exec-4] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/comments/22', ip='127.0.0.1', classMethod='com.zzj.blog.web.CommentController.comments', args=[22, {}]}
+2019-11-16 12:47:37.198  INFO 14416 --- [http-nio-8080-exec-4] com.zzj.blog.aspect.LogAspect            : Result:blog :: commentList
+2019-11-16 12:51:10.348  INFO 14416 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.index', args=[0, {}, org.apache.catalina.connector.RequestFacade@5b9470c2]}
+2019-11-16 12:51:10.513  INFO 14416 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result:index
+2019-11-16 12:51:10.732  INFO 14416 --- [http-nio-8080-exec-7] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 12:51:10.736  INFO 14416 --- [http-nio-8080-exec-7] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 12:51:37.241  INFO 14416 --- [http-nio-8080-exec-10] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/types/-1', ip='127.0.0.1', classMethod='com.zzj.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2019-11-16 12:51:37.255  INFO 14416 --- [http-nio-8080-exec-10] com.zzj.blog.aspect.LogAspect            : Result:types
+2019-11-16 12:51:37.824  INFO 14416 --- [http-nio-8080-exec-9] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 12:51:37.828  INFO 14416 --- [http-nio-8080-exec-9] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 12:51:40.745  INFO 14416 --- [http-nio-8080-exec-8] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/tags/-1', ip='127.0.0.1', classMethod='com.zzj.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2019-11-16 12:51:40.775  INFO 14416 --- [http-nio-8080-exec-8] com.zzj.blog.aspect.LogAspect            : Result:tags
+2019-11-16 12:51:40.871  INFO 14416 --- [http-nio-8080-exec-6] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 12:51:40.876  INFO 14416 --- [http-nio-8080-exec-6] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 12:51:46.722  INFO 14416 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/archives', ip='127.0.0.1', classMethod='com.zzj.blog.web.ArchiveShowController.archivesByYearAndMonth', args=[{}]}
+2019-11-16 12:51:46.748  INFO 14416 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result:archives
+2019-11-16 12:51:46.835  INFO 14416 --- [http-nio-8080-exec-5] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 12:51:46.839  INFO 14416 --- [http-nio-8080-exec-5] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 12:52:03.544  INFO 14416 --- [http-nio-8080-exec-2] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/aboutweb', ip='127.0.0.1', classMethod='com.zzj.blog.web.AboutShowContrller.aboutweb', args=[]}
+2019-11-16 12:52:03.545  INFO 14416 --- [http-nio-8080-exec-2] com.zzj.blog.aspect.LogAspect            : Result:aboutweb
+2019-11-16 12:52:03.629  INFO 14416 --- [http-nio-8080-exec-4] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 12:52:03.633  INFO 14416 --- [http-nio-8080-exec-4] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 12:52:03.944  INFO 14416 --- [http-nio-8080-exec-3] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/comments/22', ip='127.0.0.1', classMethod='com.zzj.blog.web.CommentController.comments', args=[22, {}]}
+2019-11-16 12:52:03.947  INFO 14416 --- [http-nio-8080-exec-3] com.zzj.blog.aspect.LogAspect            : Result:blog :: commentList
+2019-11-16 12:52:11.579  INFO 14416 --- [http-nio-8080-exec-8] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/friends', ip='127.0.0.1', classMethod='com.zzj.blog.web.FriendsShowController.friends', args=[{}]}
+2019-11-16 12:52:11.594  INFO 14416 --- [http-nio-8080-exec-8] com.zzj.blog.aspect.LogAspect            : Result:friends
+2019-11-16 12:52:11.691  INFO 14416 --- [http-nio-8080-exec-6] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 12:52:11.698  INFO 14416 --- [http-nio-8080-exec-6] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 12:52:15.793  INFO 14416 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/about', ip='127.0.0.1', classMethod='com.zzj.blog.web.AboutShowContrller.about', args=[]}
+2019-11-16 12:52:15.793  INFO 14416 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result:about
+2019-11-16 12:52:15.877  INFO 14416 --- [http-nio-8080-exec-2] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 12:52:15.882  INFO 14416 --- [http-nio-8080-exec-2] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 12:53:56.196  INFO 14416 --- [http-nio-8080-exec-10] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/search', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 学习, {}]}
+2019-11-16 12:53:56.207  INFO 14416 --- [http-nio-8080-exec-10] com.zzj.blog.aspect.LogAspect            : Result:search
+2019-11-16 12:54:05.435  INFO 14416 --- [http-nio-8080-exec-7] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/search', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 青春, {}]}
+2019-11-16 12:54:05.443  INFO 14416 --- [http-nio-8080-exec-7] com.zzj.blog.aspect.LogAspect            : Result:search
+2019-11-16 12:54:21.153  INFO 14416 --- [http-nio-8080-exec-8] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/search', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], sdfdsfsd fsd, {}]}
+2019-11-16 12:54:21.156  INFO 14416 --- [http-nio-8080-exec-8] com.zzj.blog.aspect.LogAspect            : Result:search
+2019-11-16 12:54:27.792  INFO 14416 --- [http-nio-8080-exec-6] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.index', args=[0, {}, org.apache.catalina.connector.RequestFacade@1e404bbf]}
+2019-11-16 12:54:29.374  INFO 14416 --- [http-nio-8080-exec-6] com.zzj.blog.aspect.LogAspect            : Result:index
+2019-11-16 12:54:29.471  INFO 14416 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 12:54:29.474  INFO 14416 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 12:54:34.083  INFO 14416 --- [http-nio-8080-exec-10] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/types/3', ip='127.0.0.1', classMethod='com.zzj.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 3, {}]}
+2019-11-16 12:54:34.098  INFO 14416 --- [http-nio-8080-exec-10] com.zzj.blog.aspect.LogAspect            : Result:types
+2019-11-16 12:54:34.201  INFO 14416 --- [http-nio-8080-exec-7] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 12:54:34.205  INFO 14416 --- [http-nio-8080-exec-7] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 12:54:39.517  INFO 14416 --- [http-nio-8080-exec-9] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/tags/7', ip='127.0.0.1', classMethod='com.zzj.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 7, {}]}
+2019-11-16 12:54:39.532  INFO 14416 --- [http-nio-8080-exec-9] com.zzj.blog.aspect.LogAspect            : Result:tags
+2019-11-16 12:54:39.611  INFO 14416 --- [http-nio-8080-exec-8] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 12:54:39.615  INFO 14416 --- [http-nio-8080-exec-8] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 12:54:56.273  INFO 14416 --- [http-nio-8080-exec-6] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/aboutweb', ip='127.0.0.1', classMethod='com.zzj.blog.web.AboutShowContrller.aboutweb', args=[]}
+2019-11-16 12:54:56.274  INFO 14416 --- [http-nio-8080-exec-6] com.zzj.blog.aspect.LogAspect            : Result:aboutweb
+2019-11-16 12:54:56.369  INFO 14416 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/footer/newblog', ip='127.0.0.1', classMethod='com.zzj.blog.web.IndexController.newblogs', args=[{}]}
+2019-11-16 12:54:56.375  INFO 14416 --- [http-nio-8080-exec-1] com.zzj.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-11-16 12:54:56.720  INFO 14416 --- [http-nio-8080-exec-2] com.zzj.blog.aspect.LogAspect            : Result : RequestLog{url='/comments/22', ip='127.0.0.1', classMethod='com.zzj.blog.web.CommentController.comments', args=[22, {}]}
+2019-11-16 12:54:56.723  INFO 14416 --- [http-nio-8080-exec-2] com.zzj.blog.aspect.LogAspect            : Result:blog :: commentList

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head th:replace="_fragments :: head(~{:: title})">
+    <meta charset="UTF-8">
+    <!--首先完成移动端的预览设置问题,设备的宽度初始缩放倍数为1.0倍，这里还可以设置用户禁止缩放等等-->
+    <meta name="viewport" content="device-width,initial-scale=1.0">
+    <title>关于我</title>
+    <!--接下来进行semanticUI的css CDN的引用-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+    <!--引入我们自己写的css-->
+    <link rel="stylesheet" href="../static/css/me.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+
+<!--导航栏-->
+<nav th:replace="_fragments :: menu(7)" class="ui   attached segment m-padded-tb-mini m-shadow-small">
+
+    <!--container的好处很多，其中之一使得设备正常显示-->
+    <div class="ui container">
+        <!--使用一个菜单来放我们所有的导航链接-->
+        <div class="ui  secondary stackable menu">
+            <a class="item">
+                <img class="ui circular image" src="https://unsplash.it/50/50?image=1005">
+                &nbsp;&nbsp;&nbsp;Mr_农兴奋
+            </a>&nbsp;
+            <a class="item m-item m-mobile-hide"><i class="fas home icon"></i>首页</a>
+            <a class="item m-item m-mobile-hide"><i class="fas fa-ice-cream"></i>分类</a>
+            <a class="item m-item m-mobile-hide" ><i class="fas fa-candy-cane"></i>标签</a>
+            <a class="item m-item m-mobile-hide"><i class="fas fa-pizza-slice"></i>归档</a>
+            <a class="item m-item m-mobile-hide"><i class="fas fa-cookie"></i>本站</a>
+            <a class="item m-item m-mobile-hide"><i class="fas fa-fish"></i>友链</a>
+            <a class="active item m-item m-mobile-hide"><i class="fas fa-seedling"></i>关于我</a>
+            <div class="right m-item item m-mobile-hide">
+                <div class="ui icon inverted  input">
+                    <input type="text" placeholder="Search...">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--这里来弄一个导航隐藏按钮-->
+    <a href="#" class="ui black icon button m-right-top m-mobile-show menu toggle">
+        <i class="sidebar icon"></i>
+    </a>
+
+</nav>
+
+<!--中部主体-->
+<div  class="m-container m-padded-tb-big">
+    <div class="ui container">
+
+        <div class="ui stackable grid">
+            <div class="eleven wide column">
+                <div class="image">
+                    <img src="https://unsplash.it/800/600?image=1005" alt="" class="ui rounded image" th:src="@{/images/mybig.jpg}">
+                </div>
+                <h1 class="ui center aligned header" style="font-family: 楷体;">芳华如梦</h1>
+                <!--文章的主要内容-->
+                <h2 style="font-family: 楷体;">学习与工作</h2>
+                <h4 class="m-text">
+                    <p style="text-indent: 2em;">大学对于我来说，觉得自己挺幸运的，老师们的教导和关心，师兄师姐们的帮助和同学们和睦相处，师弟师妹们的信任。选择信息与计算科学专业，是一件莫名很适合我的事。如果让我现在重新选择专业，除了计算机，就只有学一门语言能够带给我动力。我喜欢能够通过编程弄出自己的程序，完成一个项目，这也是我能够日复一日地坐在电脑桌前学习技术的动力。</p>
+
+                    <p style="text-indent: 2em;">很幸运成为编程科技团队的一员，在这里学习带给我的不仅仅是清晰的学习路线，明确的就业目标，更为重要的是认识了一群志同道合奋斗的好朋友。
+
+                        很难想象要是我没有加入科技团队，平时的大学生活会怎么样呢？其他我不知道，这个网站肯定做不出来。
+
+                        现在想来，很幸运能够在今年暑假期间在北京学习，与很多优秀的人接触，见识到大佬们的精美的项目，深刻认识到自己的无知和不足，使自己更有动力去学习，埋下做自己的博客网站的种子。接着一个多月敏捷全栈开发出来。</p>
+                    <p style="text-indent: 2em;">也很幸运加入了学院团委、学生会，从一名干事到团委副书记到后来的退任。在这里收获了很多，为人处世的道理，与老师、同学们交流，工作，学会取舍等等；这些锻炼了我的综合素质能力，在我遇到的各种问题时使我能够不畏惧的面对它们。</p>
+
+                    <p style="text-indent: 2em;">但是，人，总是不满足的。</p>
+
+                    <p style="text-indent: 2em;">目前自己搭这个网站明显感觉有点仓促，像自己一样还不够沉稳。接下来的时间里，除了学习编程底层知识，便是不断维护我的网站，希望在大四实习的时候能拿得出手。
+
+                        我现在大四了，下学期便要出去实习了。最为感触的便是之前在一起学习的学长们的面试和在外为生活奋斗，为了找到一个好工作，他们已经付出了很多时间。至于我，同样也就只有不到一年的时间面对面试官的检验，面对生活的考验。 能不能找到一个好工作对于我来说，意义应该挺大的。那是我对积极向上的生活的憧憬，凭借自己的付出拿到不错的薪水也是我梦寐以求的事。</p>
+
+                    <p style="text-indent: 2em;">或许还是因为初生牛犊不怕虎，对工作更多的是期待，而不是恐惧。真正恐惧的是以后的生活能不能让自己满意。时常幻想，有了钱，下了班。就能自己去喜欢的地方吃上美食。周末去剧院看看剧，欣赏音乐。假期享受各地的美景，遇到有趣的人。
+
+                        成年人会说：等你工作了，就完全不一样。
+
+                        我不希望不一样。我挺反感这些“高姿态”告诉你社会残酷的成年人，仿佛除了一昧挣钱挣到房子，车子那才算立足。到底是应该为了钱卖力地工作，还是勤奋地工作中自然产生了钱呢。</p></h4>
+                <h2 style="font-family: 楷体;">成长</h2>
+                <h4 class="m-text">
+                    <p style="text-indent: 2em;">成长中的烦恼大概是每个人都记忆深刻的。在上大学之前，每每遇到烦心事，我便选择，听着歌出去散散步，来到一个人少但是可以看到人群的地方，任由自己的情绪蔓延。
+                        听歌，渐渐地变成了我的嗜好。</p>
+                    <p style="text-indent: 2em;">你要问我喜欢哪个歌手，我的回答是，我喜欢，华晨宇的烟火里的尘埃，陈奕迅的人来人往，十面埋伏，林宥嘉的残酷月光，李荣浩的不将就...
+                        于我而言，听歌虽然能蔓延情绪，却无法给我救生圈。看书倒是像给了我一块木板，凭借这一点支撑，不至于死亡。</p>
+                    <p style="text-align: center"><span style="color: #00d95a">|</span>我看《黄金时代》，告诉我大多数人都是时代的奴隶，而找寻真正的自由与快乐是被环境所玷污</p>
+                    <p style="text-align: center"><span style="color: #00d95a">|</span>我看《月亮与六便士》，告诉我有的人能够为内心对梦想的狂热，将所有抛之脑后</p>
+                    <p style="text-align: center"><span style="color: #00d95a">|</span>我看《人间失格》，告诉我原来有群人跟我一样，不知道怎么像个正常人去生活</p>
+                    <p style="text-align: center"><span style="color: #00d95a">|</span>我看《阿Q正传》，告诉我精神胜利法的阿Q是懦弱的，不受人尊重的</p>
+                    <p style="text-align: center"><span style="color: #00d95a">|</span>我看《尘埃落地》，告诉我有的“傻子”比“聪明人”做事更加有思想</p>
+                    <p style="text-indent: 2em;">写到这儿，我发现自己越写好像有点丧。这就是我啊，他们说我情感丰富，想的特别多，这就是我啊。但是也不尽然，我希望通过看一些书，明白一些道理，追寻内心的快乐。
+                        无论是文学还是艺术，只为从中能找到自己的方向或者简单的情感寄托。</p>
+                </h4>
+                <h2 style="font-family: 楷体;">恋爱</h2>
+                <h4 class="m-text">
+                    <p style="text-indent: 2em;">还是谈谈自己的恋爱观。</p>
+
+                    <p style="text-indent: 2em;">我常常对朋友说，我还是比较喜欢被动。我不太会谈恋爱，有些时候过于害羞，甚至有些害怕，怕自己不够沉稳、会手忙脚乱。经过高中和大学的两段感情，我想我还是一个不太懂得和女生相处的直男。
+                        以前特别喜欢看校园恋情的电视剧，电影，书籍：《那些年追过的女孩》、《同桌的你》、《三重门》、《匆匆那年》、《我的少女时代》。
+                        《意林》里的关于爱情的文章是我的最爱...每次看得我不亦乐乎，总是希望自己能变成男主角那样，有他们那样的经历，在某一瞬间与女主角摩擦出火花，哈哈哈。事实上，怎么可能呢。</p>
+
+                    <p style="font-size: large">《我的少女时代》里的徐太宇教会我，要让女生走远离公路的一边。</p>
+
+                    <p style="text-indent: 2em;">emmmmmm...回头看了一下，写的什么乱七八糟。你看，一说起恋爱，我就变得乱七八糟。。。</p>
+
+                    <p style="text-indent: 2em;">总而言之，对我的那个她，我依然期待着。。。</p>
+
+                    <p style="color:#00a8c6;font-size:large"> 我希望，每一次和你的见面，你能看到我眼中的星星是你，我能感受到你的快乐。</p>
+
+                    <p>而现在的话，我的心情就借用一首顾城的诗。</p>
+                    <span style="font-size:large;font-family: 楷体;color:#2c2c2c"><p>远和近</p>
+                        <p>你 一会看我</p>
+                        <p>一会看云</p>
+                        <p>我觉得</p>
+                        <p>你看我时很远</p>
+                        <p>你看云时很近</p></span>
+                </h4>
+            </div>
+            <div class="five wide column">
+                <div class="ui top attached segment">
+                    <div class="ui header">关于我</div>
+                </div>
+                <div class="ui attached segment">
+                    <h2 class="m-text" style="font-family: 楷体;">农兴奋</h2><p class="m-text">|联系电话：130-8778-5947|<br>|Email:Nongxingf@163.com |
+                    <br>微信：nxf1023 |QQ:1050793733
+                    <br> 男 | 175cm | <br>中共党员 | 信息与计算科学专业 </p>
+                    <p class="m-text">热爱编程，喜欢折腾，正在探索高效学习编程技术的方法...</p>
+                </div>
+                <div class="ui attached segment">
+                    <div class="ui orange basic left pointing label">编程</div>
+                    <div class="ui orange basic left pointing label">写作</div>
+                    <div class="ui orange basic left pointing label">思考与感悟</div>
+                    <div class="ui orange basic left pointing label">运动</div>
+                </div>
+                <div class="ui attached segment">
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny">正能量</div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny">乐观</div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny">喜欢猫和狗</div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny">游戏</div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny">梦想主义者</div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny">...</div>
+                </div>
+                <div class="ui bottom attached segment">
+                    <a href="#" class="ui circular icon button"><i class="github icon"></i></a>
+                    <a href="#" class="ui wechat circular icon button"><i class="weixin icon"></i></a>
+                    <a href="#" class="ui qq circular icon button" data-content="1050793733" data-position="bottom center"><i class="qq icon"></i></a>
+                </div>
+
+                <div class="ui wechat-qr flowing popup transition hidden">
+                    <img src="https://unsplash.it/800/600?image=1005" alt="" class="ui rounded image" style="width: 110px"  th:src="@{/images/qrcode.jpg}">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div><br><br>
+
+<!--底部footer栏-->
+<footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+
+    <!--这里的结构其实跟nav尽量保持一致-->
+    <div class="ui center aligned container m-padded-tb-mini">
+
+        <div class="ui stackable inverted divided grid">
+
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="https://unsplash.it/450/400?image=1005" alt="" class="ui rounded image" style="width: 110px"  th:src="@{/images/qrcode.jpg}">
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+
+                <h4 class="ui inverted header m-text-spaced m-opacity-small">最新博客</h4>
+
+                <div class="ui inverted link list ">
+                    <a href="#" class="item">用户故事(User Story)</a>
+                    <a href="#" class="item">用户故事(User Story)</a>
+                    <a href="#" class="item">用户故事(User Story)</a>
+                </div>
+            </div>
+
+            <div class="three wide column">
+                <h4 class="ui inverted header  m-text-spaced m-opacity-small">联系我</h4>
+                <div class="ui inverted link list m-text-lined">
+                    <a href="#" class="item">Wechat:nxf1023</a>
+                    <a href="#" class="item">QQ:1050793733</a>
+                    <a href="#" class="item">Email:nongxingf@163.com</a>
+                </div>
+            </div>
+
+            <div class="seven wide column">
+                <h4 class="ui inverted header  m-text-spaced m-opacity-small">关于我</h4>
+                <p class="m-text-thin m-text-spaced m-opacity-mini">不知你是否跟我一样，喜欢了解他人如何快乐的生活，积极向他们寻求生活的乐趣。
+                    一起勇敢前行吧。</p>
+            </div>
+        </div>
+        <!--这里是一根线-->
+        <div class="ui inverted section divider"> </div>
+        <p class="m-text-thin m-text-spaced m-opacity-mini">Copyright © 2019-2020 河池学院数学与统计学院2016级信息与计算科学农兴奋 All Rights Reserved</p>
+    </div>
+
+
+</footer>
+
+<!--/*/<th:block th:replace="_fragments :: script">/*/-->
+<!--也许用到的jQuery的引用-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<!--这里进行semanticUI的js 的CDN的引用 -->
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+<!--/*/</th:block>/*/-->
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+    $('.wechat').popup({
+        popup : $('.wechat-qr'),
+        position: 'bottom center'
+    });
+    $('.qq').popup();
+</script>
+</body>
+</html>

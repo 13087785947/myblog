@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{:: title})">
+    <meta charset="UTF-8">
+    <!--首先完成移动端的预览设置问题,设备的宽度初始缩放倍数为1.0倍，这里还可以设置用户禁止缩放等等-->
+    <meta name="viewport" content="device-width,initial-scale=1.0">
+    <title>关于本站</title>
+    <!--接下来进行semanticUI的css CDN的引用-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/typo.css">
+    <link rel="stylesheet" href="../static/css/animate.css">
+    <link rel="stylesheet" href="../static/lib/prism/prism.css">
+    <link rel="stylesheet" href="../static/lib/tocbot/tocbot.css">
+    <link rel="stylesheet" href="../static/css/me.css">
+</head>
+<body>
+
+    <!--导航栏-->
+    <nav th:replace="_fragments :: menu(5)" class="ui   attached segment m-padded-tb-mini m-shadow-small">
+
+        <!--container的好处很多，其中之一使得设备正常显示-->
+        <div class="ui container">
+            <!--使用一个菜单来放我们所有的导航链接-->
+            <div class="ui  secondary stackable menu">
+               <a class="item">
+                   <img class="ui circular image" src="https://unsplash.it/50/50?image=1005">
+                   &nbsp;&nbsp;&nbsp;Mr_农兴奋
+               </a>&nbsp;
+               <a class="item m-item m-mobile-hide"><i class="fas home icon"></i>首页</a>
+                <a class="item m-item m-mobile-hide"><i class="fas fa-ice-cream"></i>分类</a>
+                <a class="item m-item m-mobile-hide" ><i class="fas fa-candy-cane"></i>标签</a>
+                <a class="item m-item m-mobile-hide"><i class="fas fa-pizza-slice"></i>归档</a>
+                <a class="active item m-item m-mobile-hide"><i class="fas fa-cookie"></i>本站</a>
+                <a class="item m-item m-mobile-hide"><i class="fas fa-fish"></i>友链</a>
+                <a class="item m-item m-mobile-hide"><i class="fas fa-seedling"></i>关于我</a>
+                <div class="right m-item item m-mobile-hide">
+                    <div class="ui icon inverted  input">
+                        <input type="text" placeholder="Search...">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--这里来弄一个导航隐藏按钮-->
+        <a href="#" class="ui black icon button m-right-top m-mobile-show menu toggle">
+            <i class="sidebar icon"></i>
+        </a>
+
+    </nav>
+
+    <!--中部主体-->
+    <div id="waypoint"  class="m-container-blog m-padded-tb-big animated fadeIn ">
+        <div class="ui   container">
+            <!--头部的文章信息部分-->
+            <div class="ui top attached segment">
+                <div class="ui stackable middle aligned two column  grid">
+                    <div class="row">
+                        <div class="column">
+                            <div class="ui horizontal link list">
+                                <div class="middle aligned item">
+                                    <img src="https://unsplash.it/100/100?image=1005" alt="" class="ui avatar image">
+                                    <div class="content">农兴奋</div>
+                                </div>
+                                <div class="middle aligned  item">
+                                    <i class="calendar icon"></i><span>2019-11-06 22:49</span>
+                                </div>
+                                <div class="middle aligned  item">
+                                    <i class="eye icon"></i><span>931</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right aligned column">
+                            <a href="/types/19" class="ui  orange basic label">我的人生</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--文章的图片-->
+            <div class="ui attached segment">
+                <img src="https://unsplash.it/450/350?image=1005" alt="" class="ui fluid rounded image">
+            </div>
+            <!--文章的内容部分-->
+            <div class="ui  attached padded segment">
+                <!---这里是博客的flag：原创，转载-->
+                <div class="ui right aligned basic segment">
+                    <div class="ui orange basic label">原创</div>
+                </div>
+                <!--文章的标题-->
+                <h2 class="ui center aligned header">SpringBoot搭建精美的个人博客网站</h2>
+                <br>
+                <!--文章的主要内容-->
+                <div class="m-padded-tb-large m-padded-lr-responsive typo typo-selection js-toc-content"><blockquote>
+                    <p>作者：农兴奋</p>
+                </blockquote>
+                    <hr />
+                    <blockquote>
+                        <p>真正的捷径，是一步一个脚印。</p>
+                    </blockquote>
+                    <br>
+                    <br>
+                    <h4 id="背景">背景：</h4>
+                    <p>    该网站是基于Spring Boot的完全全栈式开发的个人博客网站，前端学习了Semantic UI框架的使用，实现前后端相分离。作为一个个人博客网站，主要用于个人日常生活、学习、工作的记录与分享，更加充分的记录与展示自己，这是有效并且节省时间、精力来扩展人脉一种方式；
+                        同时个人博客也提供给游客学习的丰富情境的一个空间，鼓励参与者发表自己不同的观点；个人博客的价值也在于给作者往事全面的回忆一种途径。
+                    <h4 id="网站一览">网站一览：</h4>
+                    <h5 id="首页">首页</h5>
+                    <p><img src="http://qungz.photo.store.qq.com/qun-qungz/TeBX4BYau3BWRQndcSDBiA!!/V3t.Q7sEQctzl299KwW/0" alt="" /></p>
+                    <br>
+                    <h5 id="分类页面">分类页面</h5>
+                    <p><img src="http://qungz.photo.store.qq.com/qun-qungz/TeBX4BYau3BWRQndcSDBiA!!/V3t.Q7sEcYtzl3xQYUK/0" alt="" /></p>
+                    <br>
+                    <h5 id="归档页面">归档页面</h5>
+                    <p><img src="http://qungz.photo.store.qq.com/qun-qungz/TeBX4BYau3BWRQndcSDBiA!!/V3t.Q7sEcctzl08bbE6/0" alt="" /></p>
+                    <br>
+                    <h5 id="后台管理页面">后台管理页面</h5>
+                    <p><img src="http://qungz.photo.store.qq.com/qun-qungz/TeBX4BYau3BWRQndcSDBiA!!/V3t.Q7sEQYtzl0zGN46/0" alt="" /></p>
+                    <br>
+                    <h5 id="后台发布文章页面">后台发布文章页面</h5>
+                    <p><img src="http://qungz.photo.store.qq.com/qun-qungz/TeBX4BYau3BWRQndcSDBiA!!/V3t.Q7sEcgtzl0CVJMW/0" alt="" /></p>
+                    <h4 id="技术组合">技术组合：</h4>
+                    <ul>
+                        <li>后端：SpringBoot + Mysql + JPA + Maven + 阿里云OSS + thymeleaf模板</li>
+                        <li>前端：Semantic UI框架 + html + css + js + jQuery + editor.md等</li>
+                    </ul>
+                    <h4 id="插件集成相关下载地址后文提到">插件集成（相关下载地址后文提到）</h4>
+                    <ul>
+                        <li>编辑器 markdown</li>
+                        <li>内容排版 typo</li>
+                        <li>动画 animate</li>
+                        <li>代码高亮 prism</li>
+                        <li>目录生成 Tocbot</li>
+                        <li>滚动侦测 waypoints</li>
+                        <li>平滑滚动 jquery.scrollTo</li>
+                        <li>二维码生成 qrcode.js</li>
+                        <li>MarkDown转HTML</li>
+                        <li>简单的爬虫技术实现翻译单词功能 jsoup.jar</li>
+                    </ul>
+                    <h4 id="工具与环境">工具与环境:</h4>
+                    <ul>
+                        <li>IDEA</li>
+                        <li>Maven 3</li>
+                        <li>JDK 8</li>
+                    </ul>
+                    <h4 id="从中有什么收获">从中有什么收获？</h4>
+                    <ul>
+                        <li>基于SpringBoot的完整全栈式的开发套路</li>
+                        <li>Semantic UI框架的使用</li>
+                        <li>后端使用SpringBoot+JPA，相比于SSM框架大量的配置开发更为方便，作为新手练手的javaweb项目来说是富有意义的：<em>激发自己编程热情+熟悉SpringBoot整个开发流程+完成过后提高自己的成就感</em>。</li>
+                        <li>JPA的简单使用（JPA和MyBatis的对比，其实就是Hibernate和MyBatis的对比，对于<em>数据的操作，hibernate是面向对象的，而MyBatis是面向关系的</em>。对于我的个人博客网站来说，面向对象更为方便自己理解业务逻辑，开发过程中建表也更为方便）。</li>
+                        <li>懂得根据需求去GitHub上面使用优秀的<em>开源插件</em>，使得自己的项目锦上添花。</li>
+                        <li>对页面引擎 <em>thymeleaf模板 的熟悉掌握</em>。相比于连SpringBoot都官方遗弃的jsp来说，掌握thymeleaf是刻不容缓的。（JSP本质上是servlet，内含java代码，实际上没有做到前后端分离，所以在大环境都推崇前后端分离的情况下，着实不必再使用JSP）</li>
+                        <li>与我而言，最大的收获便是在茫茫互联网的大海里面，有了属于我的一叶扁舟，能够在扁舟上不断地<em>分享我的故事</em>给陌生人，老朋友，便是我的荣幸。</li>
+                    </ul>
+                    <h4 id="小福利">小福利</h4>
+                    <p>通过此次开发个人博客网站，除了学会集成上面提到的一些开源优秀插件，还有一些实用但是鲜有人知的对开发起到锦上添花的网站。在此分享给大家。</p>
+                    <ul>
+                        <li>Font Awesome : 小图标icon网站，你想要的精美小图标，应该都能找到 https://fontawesome.com/</li>
+                        <li>Subtle Patterns ：全是精美设计的背景图 https://www.toptal.com/designers/subtlepatterns/</li>
+                    </ul>
+                    <h1 id="1需求与功能">1、需求与功能</h1>
+                    <h3 id="11个人博客系统的用户故事">1.1个人博客系统的用户故事：</h3>
+                    <p><strong>角色</strong>：普通访客，管理员(我)</p>
+                    <blockquote>
+                        <p>普通访客：</p>
+                    </blockquote>
+                    <ul>
+                        <li>查看所有发布的博客</li>
+                        <li>查看博客的公布的所有信息</li>
+                        <li>所有博客分类</li>
+                        <li>所有博客标签</li>
+                        <li>根据年份划分的博客信息</li>
+                        <li>所有友链的信息</li>
+                        <li>根据权限访问首页“小世界”模块</li>
+                        <li>首页公告板</li>
+                        <li>访问关于我和关于本站的页面</li>
+                        <li>查看所有留言的侧边栏和提供留言的版块</li>
+                        <li>全局搜索所有的博客</li>
+                        <li>查看我分享的所有信息，如：二维码，导向至GitHub，csdn,微博的图标等</li>
+                    </ul>
+                    <blockquote>
+                        <p>管理员(我):</p>
+                    </blockquote>
+                    <ul>
+                        <li>根据账号密码登录后台管理</li>
+                        <li>后台增删改查所有博客</li>
+                        <li>后台增删改查所有分类</li>
+                        <li>后台增删改查所有便签</li>
+                        <li>后台增删改查公告板</li>
+                        <li>后台增删改查留言</li>
+                        <li>后台增删改查友链信息</li>
+                        <li>后台增删改查自己的信息</li>
+                    </ul>
+                    <h3 id="12功能规划">1.2功能规划</h3>
+                    <p><img src="http://123myblog.oss-cn-beijing.aliyuncs.com/%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90.png" alt="" /></p>
+                    <h1 id="2页面设计与开发">2、页面设计与开发</h1>
+                    <h3 id="21设计">2.1设计</h3>
+                    <blockquote>
+                        <p>页面规划：</p>
+                    </blockquote>
+                    <ul>
+                        <li>前端展示:首页、分类页、标签页、归档页、本站、友链。关于我</li>
+                        <li>后台管理：登录页面、博客管理、分类管理、标签管理、公告管理、友链管理、留言管理、个人信息管理</li>
+                    </ul>
+                    <h3 id="22页面开发">2.2页面开发</h3>
+                    <ul>
+                        <li>Semantic UI官网 https://semantic-ui.com/</li>
+                        <li>Semantic UI中文官网 https://onebugman.cn/semantic-ui/</li>
+                        <li>背景图片资源 https://www.toptal.com/designers/subtlepatterns/</li>
+                    </ul>
+                    <table class="ui celled table">
+                        <thead>
+                        <tr><th>前端相关</th><th>名称</th></tr>
+                        </thead>
+                        <tbody>
+                        <tr><td>前端框架</td><td>Semantic UI</td></tr>
+                        <tr><td>编译器</td><td>WebStorm</td></tr>
+                        <tr><td>页面语言</td><td>html+css+js</td></tr>
+                        </tbody>
+                    </table>
+                    <h3 id="23插件集成">2.3插件集成</h3>
+                    <table class="ui celled table">
+                        <thead>
+                        <tr><th>介绍</th><th>名称</th><th>获取地址</th></tr>
+                        </thead>
+                        <tbody>
+                        <tr><td>内容排版</td><td>typo.css</td><td>https://github.com/sofish/typo.css</td></tr>
+                        <tr><td>动画</td><td>animate.css</td><td>https://daneden.github.io/animate.css/</td></tr>
+                        <tr><td>代码高亮</td><td>prism</td><td>https://github.com/PrismJS/prism</td></tr>
+                        <tr><td>目录生成</td><td>Tocbot</td><td>https://tscanlin.github.io/tocbot/</td></tr>
+                        <tr><td>滚动侦测</td><td>waypoints</td><td>http://imakewebthings.com/waypoints</td></tr>
+                        <tr><td>平滑滚动</td><td>jquert.scrollTo</td><td>https://github.com/flesler/jquery.scrollTo</td></tr>
+                        <tr><td>二维码生成</td><td>qrcode.js</td><td>https://davidshimjs.github.io/qrcodejs/</td></tr>
+                        <tr><td>编辑器</td><td>MarkDown</td><td>https://pandao.github.io/editor.md</td></tr>
+                        </tbody>
+                    </table>
+                    <h1 id="3框架搭建">3、框架搭建</h1>
+                    <h3 id="31构建">3.1构建</h3>
+                    <blockquote>
+                        <p>IDEA 引入SpringBoot模块</p>
+                    </blockquote>
+                    <ul>
+                        <li>web  ：springboot集成了tomcat和springmvc的一些模块</li>
+                        <li>Thymeleaf ： 前端的模板 和jsp的最终的目的一样的</li>
+                        <li>Jpa ： 规范数据操作的工具</li>
+                        <li>MySql ：数据库</li>
+                        <li>Aspects ： 集成SpringAOP的模块，这里使用切面来实现日志</li>
+                        <li>DevTools：热部署，帮助我们开发过程中不用每次都重新启动项目启动</li>
+                    </ul>
+                    <h3 id="32异常处理">3.2异常处理</h3>
+                    <blockquote>
+                        <p>错误页面：</p>
+                    </blockquote>
+                    <ul>
+                        <li>404： 访问的资源不存在或者页面不存在，这种情况跳转404</li>
+                        <li>500： SpringBoot后台发生了一些异常信息的时候跳转的页面，这种跳转500</li>
+                        <li>ERROR： 我们自己定义的错误页面，方便开发者调试，可以便捷的查看</li>
+                    </ul>
+                    <h3 id="33日志处理">3.3日志处理</h3>
+                    <blockquote>
+                        <p>记录日志内容</p>
+                    </blockquote>
+                    <ul>
+                        <li>请求url</li>
+                        <li>访问者ip</li>
+                        <li>调用方法 classMethod</li>
+                        <li>参数args</li>
+                        <li>返回内容</li>
+                    </ul>
+                    <h1 id="4设计与规范">4、设计与规范</h1>
+                    <h3 id="41实体设计">4.1实体设计</h3>
+                    <p>实体类</p>
+                    <ul>
+                        <li>博客Blog</li>
+                        <li>博客分类Type</li>
+                        <li>博客标签Tag</li>
+                        <li>博客评论Comment</li>
+                        <li>用户User</li>
+                        <li>公告栏Bulletin</li>
+                        <li>朋友Friend</li>
+                        <li>留言Message</li>
+                    </ul>
+                    <p>举例两个数据库表：</p>
+                    <p>博客表t_blog</p>
+                    <table class="ui celled table">
+                        <thead>
+                        <tr><th>名称</th><th>类型</th><th>长度</th><th>主键</th><th>非空</th><th>描述</th></tr>
+                        </thead>
+                        <tbody>
+                        <tr><td>id</td><td>bigint</td><td>20</td><td>true</td><td>true</td><td>作为主键</td></tr>
+                        <tr><td>appreciation</td><td>bit</td><td>1</td><td>false</td><td>true</td><td>是否开启赞赏</td></tr>
+                        <tr><td>commentabled</td><td>bit</td><td>1</td><td>false</td><td>true</td><td>是否开启评论</td></tr>
+                        <tr><td>content</td><td>longtext</td><td>0</td><td>false</td><td>true</td><td>文章的正文</td></tr>
+                        <tr><td>create_time</td><td>datetime</td><td>0</td><td>false</td><td>true</td><td>文章创建时间</td></tr>
+                        <tr><td>first_pricture</td><td>varchar</td><td>255</td><td>false</td><td>true</td><td>文章的首图地址</td></tr>
+                        <tr><td>flag</td><td>varchar</td><td>255</td><td>false</td><td>true</td><td>文章的类型原创,转载,翻译</td></tr>
+                        <tr><td>published</td><td>bit</td><td>1</td><td>false</td><td>true</td><td>文章是否发布</td></tr>
+                        <tr><td>share_statement</td><td>bit</td><td>1</td><td>false</td><td>true</td><td>版权声明</td></tr>
+                        <tr><td>title</td><td>varchar</td><td>255</td><td>false</td><td>true</td><td>文章的标题</td></tr>
+                        <tr><td>update_Time</td><td>datetime</td><td>0</td><td>false</td><td>true</td><td>最近更新时间</td></tr>
+                        <tr><td>views</td><td>int</td><td>11</td><td>false</td><td>true</td><td>浏览量</td></tr>
+                        <tr><td>recommend</td><td>bit</td><td>1</td><td>false</td><td>true</td><td>是否推荐</td></tr>
+                        <tr><td>description</td><td>varchar</td><td>255</td><td>false</td><td>true</td><td>文章的主要描述</td></tr>
+                        </tbody>
+                    </table>
+                    <p>用户表t_user</p>
+                    <table class="ui celled table">
+                        <thead>
+                        <tr><th>名称</th><th>类型</th><th>长度</th><th>主键</th><th>非空</th><th>描述</th></tr>
+                        </thead>
+                        <tbody>
+                        <tr><td>id</td><td>bigint</td><td>20</td><td>true</td><td>true</td><td>作为主键</td></tr>
+                        <tr><td>create_time</td><td>datetime</td><td>0</td><td>false</td><td>true</td><td>用户创建时间</td></tr>
+                        <tr><td>avatar</td><td>varchar</td><td>255</td><td>false</td><td>true</td><td>用户的头像地址</td></tr>
+                        <tr><td>type</td><td>varchar</td><td>255</td><td>false</td><td>true</td><td>用户的类型</td></tr>
+                        <tr><td>nickname</td><td>varchar</td><td>255</td><td>false</td><td>true</td><td>用户的昵称</td></tr>
+                        <tr><td>username</td><td>varchar</td><td>255</td><td>false</td><td>true</td><td>用户的实际名称</td></tr>
+                        <tr><td>update_Time</td><td>datetime</td><td>0</td><td>false</td><td>true</td><td>最近更新时间</td></tr>
+                        <tr><td>email</td><td>varchar</td><td>255</td><td>false</td><td>true</td><td>用户的邮箱地址</td></tr>
+                        </tbody>
+                    </table>
+                    <h3 id="42应用分层">4.2应用分层</h3>
+                    <p><img src="http://123myblog.oss-cn-beijing.aliyuncs.com/%E5%BA%94%E7%94%A8%E5%88%86%E5%B1%82.png" alt="" /></p>
+                    <h1 id="5开发流程">5、开发流程</h1>
+                    <h3 id="51开发">5.1开发</h3>
+                    <ul>
+                        <li>刚开始使用手绘或者专门的画图工具画出网站的原型</li>
+                        <li>在WebStorm中通过semantic UI根据设计的原型将前端网页码出来</li>
+                        <li>接着使用IDEA，构建SpringBoot环境进行后端的编写</li>
+                    </ul>
+                    <blockquote>
+                        <ol>
+                            <li>dao持久层通过接口继承JPARepository即可得到CRUD的标准方法，如果需要特定的查询方法，根据Jpa命名规则或者使用@Query注解即可</li>
+                            <li>service业务逻辑层先编写一系列接口及其想实现的方法，再通过类去实现相应的接口，注意添加@Service注解放进IOC容器中。提供给Controller层调用</li>
+                            <li>在service业务逻辑层的实体类中的方法加上@Transactional事务注解，实现开启事务</li>
+                            <li>Web层的Controller再通过依赖注入service即可完成相应的业务逻辑</li>
+                            <li>通过thymeleaf前端引擎进行渲染数据</li>
+                        </ol>
+                    </blockquote>
+                    <ul>
+                        <li>后端完成过后，进行整体细节处理，进一步完善整个网站的正常运行</li>
+                    </ul>
+                    <h3 id="52部署">5.2部署</h3>
+                    <ul>
+                        <li>采用的是SpringBoot自带的 jar包的 部署方式</li>
+                        <li>通过maven 的 intall 命令得到 xxx.jar</li>
+                        <li>放到腾讯云Linux服务器中</li>
+                        <li>使用 nohup java -jar xxx.jar &amp; 命令 使得项目可以后台运行</li>
+                    </ul>
+                    <h1 id="值得一提">值得一提</h1>
+                    <ul>
+                        <li>对于这个项目的开发能够较为顺利地进行，得益于李仁密老师的网络视频，在此特地感谢他。</li>
+                        <li>Semantic UI 是一种语义化的前端框架，只要稍微熟悉，就能构建精美的页面，特此感谢semantic UI。</li>
+                        <li>作为一名后端不是很扎实的我，在做后端的过程中免不了遇到各种各样的错误，在此感谢大佬好朋友曾中杰的支持，帮助我解决了很多后端的问题。</li>
+                        <li>整个项目完成过后，最让我煎熬的是备案。在备案和上传到服务器过程中有许多地方不会操作，在此感谢我的师兄王文杰师兄，给我许多帮助和指导。</li>
+                    </ul>
+                    <h1 id="不足之处">不足之处：</h1>
+                    <ul>
+                        <li>页面还是因为不熟悉前端底层，有一些bug需要修复</li>
+                        <li>后端只是基本的逻辑实现，接下来需要加入新的技术，提高整体网站的性能。如：Redis缓存实现</li>
+                        <li>针对博客页面的二级回复目前待完善。</li>
+                        <li>博客的首页小世界栏目页面待完成。</li>
+                        <li>上传图片到阿里云OSS存储对象的功能待完成。</li>
+                        <li>全局搜索博客的功能(完成)</li>
+                        <li>SSL认证,http自动转https(完成)</li>
+                        <li>各种语言代码都支持高亮显示(完成)</li>
+                        <li>文章页面增加翻译单词功能(完成)</li>
+                    </ul>
+                    <blockquote>
+                    </blockquote>
+                    <p>秉承开源原则，该项目完整代码均能在我的github上面下载得到。能够帮到有需要的朋友那是再好不过。
+                        觉得博主的分享还不错，不妨在github上star一下博主，激励博主更新更多实用的功能。
+                        https://github.com/13087785947/Nonggoing</p>
+                </div>
+
+                <!--标签-->
+                <div class="m-padded-lr-responsive">
+                    <a href="aboutweb.html" class="ui basic teal left pointing label">关于本站</a>
+                </div>
+                <!--赞赏-->
+                <div class="ui center aligned basic segment">
+                    <button id="payButton" class="ui orange basic circular button">赞赏</button>
+                </div>
+                <div class="ui payQR flowing popup transition hidden">
+                    <div class="ui orange basic label">
+                        <div class="ui images" style="font-size:inherit !important;">
+                            <div class="image">
+                                <img src="/images/weixinpay.png" alt="" class="ui rounded bordered image" style="width: 120px">
+                                <div>微信</div>
+                            </div>
+                            <div class="image">
+                                <img src="/images/zhifubaopay.png" alt="" class="ui rounded bordered image" style="width: 120px">
+                                <div>支付宝</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--文章的信息-->
+            <div class="ui attached positive message">
+                <div class="ui middle aligned grid">
+                    <div class="eleven wide column">
+                        <ui class="list">
+                            <li>作者:<span>农兴奋</span> (扫码联系作者)</li>
+                            <li>发表时间:<span>2019-11-06 09:42</span></li>
+                            <li>版权声明:自由转载-非商用-非衍生-保持署名(创意共享3.0许可证)</li>
+                            <li>公众号转载:请在文末添加作者赞赏二维码</li>
+                        </ui>
+                    </div>
+                    <div class="five wide column">
+                        <img src="/images/qrcode.jpg" alt="" class="ui right floated rounded bordered image" style="width: 110px">
+                    </div>
+                </div>
+            </div>
+            <!--留言部分-->
+            <div class="ui bottom attached segment">
+
+                <h3 class="ui  dividing header" ><span>请先<a id="blog-login">登录</a>，</span>欢迎吐槽，分享</h3>
+
+                <div  id="comment-container" class="ui teal segment">
+                    <div>
+                        <div class="ui threaded comments" style="max-width: 100%;">
+                            <h3 class="ui dividing header" >评论列表</h3>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+    <!--小工具-->
+    <div id="toolbar" class="m-fixed m-right-bottom m-padded" style="display: none">
+        <div class="ui vertical icon buttons">
+            <button type="button" class="ui toc teal button">目录</button>
+            <button id="trans-btn" type="button" class="ui teal button" >翻译</button>
+            <a class="ui teal button" href="#comment-container">留言</a>
+            <button class="ui  icon wechat button"><i class="weixin icon"></i></button>
+            <div class="ui icon button "  id="toTop-button"><i class="chevron up icon"></i></div>
+        </div>
+    </div>
+    <!--翻译的工具-->
+    <div class="ui teal trans inverted  floating segment m-left-top  m-fixed m-trans-show">
+        <div class="ui center aligned header">单词小助手</div>
+        <div class="ui field m-padded">
+            <div class="ui icon input">
+                <input class="ui input" placeholder="英语单词" name="word" value="" type="text"><i class="translate link icon"></i>
+            </div>
+        </div>
+        <div>
+            <div id="trans-result"  class="ui field m-padded" style="font-family: 楷体 !important;">
+                <p style="font-size: 22px !important;">翻译结果:</p>
+                <p style="font-size: 20px !important;">温馨提示:站长技术问题，可能导致有些单词无法查询.</p>
+            </div>
+        </div>
+    </div>
+    <!--目录的插件-->
+    <div class="ui toc-container flowing popup left center transition hidden" style="width: 250px!important;">
+        <ol class="js-toc"></ol>
+    </div>
+    <!--微信阅读的插件-->
+    <div id="qrcode" class="ui wechat-qr flowing popup transition hidden" style="width: 130px!important;"></div>
+
+    <!--底部footer栏-->
+    <footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+        <!--这里的结构其实跟nav尽量保持一致-->
+        <div class="ui center aligned container m-padded-tb-mini">
+
+            <div class="ui stackable inverted divided grid">
+
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="../static/images/qrcode.jpg" th:src="@{/images/qrcode.jpg}" class="ui rounded image" style="width: 110px">
+                        </div>
+                    </div>
+                </div>
+                <div class="three wide column">
+
+                    <h4 class="ui inverted header m-text-spaced m-opacity-small">最新博客</h4>
+
+                    <div class="ui inverted link list ">
+                        <a href="#" class="item">用户故事(User Story)</a>
+                        <a href="#" class="item">用户故事(User Story)</a>
+                        <a href="#" class="item">用户故事(User Story)</a>
+                    </div>
+                </div>
+
+                <div class="three wide column">
+                    <h4 class="ui inverted header  m-text-spaced m-opacity-small">联系我</h4>
+                    <div class="ui inverted link list m-text-lined">
+                        <a href="#" class="item">Wechat:nxf1023</a>
+                        <a href="#" class="item">QQ:1050793733</a>
+                        <a href="#" class="item">Email:nongxingf@163.com</a>
+                    </div>
+                </div>
+
+                <div class="seven wide column">
+                    <h4 class="ui inverted header  m-text-spaced m-opacity-small">关于我</h4>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">不知你是否跟我一样，喜欢了解他人如何快乐的生活，积极向他们寻求生活的乐趣。
+                        一起勇敢前行吧。</p>
+                </div>
+            </div>
+            <!--这里是一根线-->
+            <div class="ui inverted section divider"> </div>
+            <p class="m-text-thin m-text-spaced m-opacity-mini">Copyright © 2019-2020 河池学院数学与统计学院2016级信息与计算科学农兴奋 All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!--/*/<th:block th:replace="_fragments :: script">/*/-->
+    <!--也许用到的jQuery的引用-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <!--这里进行semanticUI的js 的CDN的引用 -->
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+    <!--平滑滚动的cdn-->
+    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+    <!--引入代码高亮的js-->
+    <script src="../static/lib/prism/prism.js"></script>
+    <!--引入目录的js-->
+    <script src="../static/lib/tocbot/tocbot.js"></script>
+    <!--引用二维码的js-->
+    <script src="../static/lib/qrcode/qrcode.min.js"></script>
+    <!--滑动检测-->
+    <script src="../static/lib/waypoints/jquery.waypoints.min.js"></script>
+    <!--/*/</th:block>/*/-->
+
+    <!--平滑滚动的cdn-->
+    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+    <!--引入代码高亮的js-->
+    <script src="../static/lib/prism/prism1.js" th:src="@{/lib/prism/prism.js}"></script>
+    <!--引入目录的js-->
+    <script src="../static/lib/tocbot/tocbot.js" th:src="@{/lib/tocbot/tocbot.js}"></script>
+    <!--引用二维码的js-->
+    <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
+    <!--滑动检测-->
+    <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+
+
+    <script>
+        hide();
+        function hide(){
+            $('.trans').transition('toggle');
+            $('.trans').toggleClass('m-trans-show');
+        }
+
+        $('#trans-btn').click(function () {
+
+            $('.trans').transition('fly right');
+
+        });
+
+        $('.translate').click(function () {
+            loaddata();
+        });
+
+        function loaddata() {
+            $("#trans-result").load("/translate",{
+                word : $("[name='word']").val()
+            })
+        }
+
+        $('.menu.toggle').click(function () {
+            $('.m-item').toggleClass('m-mobile-hide');
+        });
+
+        $('#comment-form').form({
+            fields:{
+                content:{
+                    identifier : 'content',
+                    rules:[{
+                        type:'empty',
+                        prompt:'请输入评论内容'
+                    }]
+                }
+            }
+        });
+
+        $('#payButton').popup({
+            popup : $('.payQR.popup'),
+            on : 'click',
+            position: 'bottom center'
+        });
+
+        tocbot.init({
+            tocSelector: '.js-toc',
+            contentSelector: '.js-toc-content',
+            headingSelector:'h1,h2,h3',
+        });
+
+        $('.toc.button').popup({
+            popup:$('.toc-container.popup'),
+            on: 'click',
+            position: 'left center'
+        });
+
+        $('.wechat').popup({
+            popup : $('.wechat-qr'),
+            position: 'left center'
+        });
+
+        var serurl = "www.zengzhongjie.com";
+        var url = "\/blog\/22";
+        var qrcode = new QRCode("qrcode",{
+            text:serurl+url,
+            width:110,
+            height:110,
+            colorDark:"#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+
+        $('#toTop-button').click(function () {
+            $(window).scrollTo(0,500);
+        });
+
+        var waypoint = new Waypoint({
+            element: document.getElementById('waypoint'),
+            handler: function(direction) {
+                if (direction == 'down') {
+                    $('#toolbar').show(100);
+                } else {
+                    $('#toolbar').hide(500);
+                }
+
+            }
+        })
+
+        /*下面这个js实现打开这个网页，显示当前博客所有的评论信息*/
+        $(function () {
+            $("#comment-container").load("\/comments\/22");
+        });
+
+        /*点击提交评论，进行表单验证，验证通过再提交数据*/
+        $('#commentpost-btn').click(function () {
+            var boo = $('#comment-form').form('validate form');
+            if(boo){
+                postData();
+            }else{
+
+            }
+        });
+
+        $('#clear-btn').click(function () {
+            clearContent();
+        });
+
+        /*实现表单提交*/
+        function postData() {
+            $("#comment-container").load("\/comments",{
+                "parentComment.id" : $("[name='parentComment.id']").val(),
+                "blog.id" : $("[name='blog.id']").val(),
+                "nickname": $("[name='nickname']").val(),
+                "email"   : $("[name='email']").val(),
+                "content" : $("[name='content']").val()
+            },function (responseTxt, statusTxt, xhr) {
+//        $(window).scrollTo($('#comment-container'),500);
+                clearContent();//提交了过后，把评论内容删除
+            });
+        }
+
+        function clearContent() {
+            $("[name='content']").val('');
+            $("[name='parentComment.id']").val(-1);
+            $("[name='content']").attr("placeholder","请输入评论信息...");
+        }
+
+
+        function reply(obj) {
+            var commentId = $(obj).data('commentid');
+            var commentNickname = $(obj).data('commentnickname');
+            $("[name='content']").attr("placeholder", "@"+commentNickname).focus();
+            $("[name='parentComment.id']").val(commentId);
+            $(window).scrollTo($('#comment-form'),500);
+        }
+
+    </script>
+</body>
+</html>
